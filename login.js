@@ -34,7 +34,7 @@ function loginUsuario(){
 }
 
     document.body.innerHTML = `<h1>No te conozco :(</h1>
-        <a href="index.html.">Volver</a>`;
+        <a href="index.html">Volver</a>`;
 }
 
 let btnRegistro = document.getElementById("btnRegistro");
