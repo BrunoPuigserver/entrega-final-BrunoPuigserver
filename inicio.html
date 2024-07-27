@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="styles.css">
+<title>Simulador de Préstamos</title>
+</head>
+<body>    
+    <div class="titulo-pag">
+    <h1>PrestaYA </h1>
+    <h3>Tu financiera de confianza</h3>
+</div>
+    <div class="form-prestamo">
+        <form>
+            <h2 class="h2-superior">Solicitar préstamo</h2>
+
+            <label for="monto">Ingrese el monto que desea adquirir:</label>
+            <input type="number" id="monto" placeholder="Ingrese el monto" required><br><br>
+            
+            <label for="intereses">Intereses anuales (%):</label>
+            <input type="number" id="intereses" placeholder="Ingrese los intereses" required><br><br>
+            
+            <label for="plazo">Plazo a pagar préstamo (en meses):</label>
+            <input type="number" id="plazo" placeholder="Ingrese el plazo" required><br><br>
+            
+            <button type="button" id="simularBtn">Simular préstamo</button>
+            
+            <h2 class="resultados">Los resultados de su prestamo son:</h2>
+            <h2 id="tituloCuotaMensual">Cuota mensual de:$ars</h2>
+            <p><span id="cuotaMensual"></span></p>
+            <h2 id="tituloTotalAPagar">Monto total a devolver:$ars</h2>
+            <p><span id="totalAPagar"></span></p>
+        </form>
+    </div>
+    
+    <div class="clima">
+        <h2>Clima Actual en Buenos Aires</h2>
+        <p id="ciudad"></p>
+        <p id="descripcion"></p>
+        <p id="temperatura"></p>
+        <p id="humedad"></p>
+        <img src="./img/icono-clima.png" alt="">
+    </div>
+
+    <script src="prestamos.js"></script>
+    <script src="clima.js"></script>
+</body>
+</html>
